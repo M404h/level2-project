@@ -1,3 +1,9 @@
+#you can create the access token in jenkins
+#press on the user id "admin" > configure > API token > press "add new token" > press "generate" > copy the token and paste it here instead of the token word
+
+#dont forget to install "github integration plugin" before using the files
+
+
 all:
 	project department office person role
 
