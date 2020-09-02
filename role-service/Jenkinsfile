@@ -49,9 +49,9 @@ spec:
   }
   stages {
       stage("Build") {
-     //   when {
-       //         changeset "**/role-service/**"
-         //   }
+        when {
+               changeset "**/role-service/**"
+           }
           steps {
               container('dnd') {
                   sh '''
@@ -62,9 +62,9 @@ spec:
           }
       }
       stage("Release") {
-       // when {
-         //       changeset "**/role-service/**"
-           // }
+       when {
+               changeset "**/role-service/**"
+            }
           steps {
               container('dnd') {
                   sh '''
@@ -75,9 +75,9 @@ spec:
           }
       }
       stage("Deploy") {
-        // when {
-          //      changeset "**/role-service/**"
-           // }
+        when {
+               changeset "**/role-service/**"
+           }
           steps {
               container('kubectl') {
                   sh '''
