@@ -50,6 +50,9 @@ spec:
   }
   stages {
       stage("Build") {
+        when {
+                changeset "**/$SERVICE_NAME/*.*"
+            }
           steps {
               container('dnd') {
                   sh '''
@@ -60,6 +63,9 @@ spec:
           }
       }
       stage("Release") {
+        when {
+                changeset "**/$SERVICE_NAME/*.*"
+            }
           steps {
               container('dnd') {
                   sh '''
@@ -70,6 +76,9 @@ spec:
           }
       }
       stage("Deploy") {
+        when {
+                changeset "**/$SERVICE_NAME/*.*"
+            }
           steps {
               container('kubectl') {
                   sh '''
