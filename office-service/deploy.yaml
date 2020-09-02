@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: office-service
-  namespace: test
+  namespace: theta
   labels:
     app: office
     type: api

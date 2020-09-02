@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: department-service
-  namespace: test
+  namespace: theta
   labels:
     app: department
     type: api

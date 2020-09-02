@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: person-service
-  namespace: test
+  namespace: theta
   labels:
     app: person-service
     type: api
